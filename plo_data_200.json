@@ -1,4 +1,4 @@
-const PLO_DATA = {
+{
   "metadata": {
     "game": "PLO MTT",
     "total_scenarios": 200,
@@ -5884,4 +5884,4 @@ const PLO_DATA = {
       "key_concept": "ICM压力存在但强牌仍要play"
     }
   ]
-};
+}

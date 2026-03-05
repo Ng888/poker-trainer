@@ -1,4 +1,4 @@
-const TRIPLE_DRAW_DATA = {
+{
   "metadata": {
     "game": "2-7 Triple Draw",
     "total_scenarios": 200,
@@ -4914,4 +4914,4 @@ const TRIPLE_DRAW_DATA = {
       "key_concept": "看大牌数量决策"
     }
   ]
-};
+}
