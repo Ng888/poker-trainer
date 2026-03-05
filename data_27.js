@@ -17,15 +17,15 @@ const DATA_27 = {
       "id": 1,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2 (不同花)",
+      "hand": "7♠6♥4♦3♣2♠",
+      "hand_desc": "7-6-4-3-2",
       "action_before": "None",
-      "question": "你有Number 1，应该如何行动?",
+      "question": "你有几乎nuts，应该如何行动?",
       "options": [
         {
           "action": "Raise",
           "correct": true,
-          "explanation": "Number 1是顶级牌，必须Raise"
+          "explanation": "几乎nuts是顶级牌，必须Raise"
         },
         {
           "action": "Call",
@@ -38,37 +38,10 @@ const DATA_27 = {
           "explanation": "绝对不可以Fold"
         }
       ],
-      "key_concept": "Number 1是2-7中最好的牌"
+      "key_concept": "几乎nuts是2-7中最好的牌"
     },
     {
       "id": 2,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "8♠6♥4♦3♣2♠",
-      "hand_desc": "8-6-4-3-2",
-      "action_before": "None",
-      "question": "你有强牌，应该如何行动?",
-      "options": [
-        {
-          "action": "Raise",
-          "correct": true,
-          "explanation": "强牌是顶级牌，必须Raise"
-        },
-        {
-          "action": "Call",
-          "correct": false,
-          "explanation": "太弱了，应该Raise"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "绝对不可以Fold"
-        }
-      ],
-      "key_concept": "强牌是2-7中最好的牌"
-    },
-    {
-      "id": 3,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "8♠5♥4♦3♣2♠",
@@ -95,18 +68,18 @@ const DATA_27 = {
       "key_concept": "强牌是2-7中最好的牌"
     },
     {
-      "id": 4,
+      "id": 3,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2 (不同花)",
+      "hand": "7♠6♥4♦3♣2♠",
+      "hand_desc": "7-6-4-3-2",
       "action_before": "None",
-      "question": "你有Number 1，应该如何行动?",
+      "question": "你有几乎nuts，应该如何行动?",
       "options": [
         {
           "action": "Raise",
           "correct": true,
-          "explanation": "Number 1是顶级牌，必须Raise"
+          "explanation": "几乎nuts是顶级牌，必须Raise"
         },
         {
           "action": "Call",
@@ -119,7 +92,34 @@ const DATA_27 = {
           "explanation": "绝对不可以Fold"
         }
       ],
-      "key_concept": "Number 1是2-7中最好的牌"
+      "key_concept": "几乎nuts是2-7中最好的牌"
+    },
+    {
+      "id": 4,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "None",
+      "question": "你有强牌，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "强牌是顶级牌，必须Raise"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "太弱了，应该Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "绝对不可以Fold"
+        }
+      ],
+      "key_concept": "强牌是2-7中最好的牌"
     },
     {
       "id": 5,
@@ -179,15 +179,15 @@ const DATA_27 = {
       "id": 7,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2 (不同花)",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
       "action_before": "None",
-      "question": "你有Number 1，应该如何行动?",
+      "question": "你有强牌，应该如何行动?",
       "options": [
         {
           "action": "Raise",
           "correct": true,
-          "explanation": "Number 1是顶级牌，必须Raise"
+          "explanation": "强牌是顶级牌，必须Raise"
         },
         {
           "action": "Call",
@@ -200,37 +200,10 @@ const DATA_27 = {
           "explanation": "绝对不可以Fold"
         }
       ],
-      "key_concept": "Number 1是2-7中最好的牌"
+      "key_concept": "强牌是2-7中最好的牌"
     },
     {
       "id": 8,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "7♠6♥4♦3♣2♠",
-      "hand_desc": "7-6-4-3-2",
-      "action_before": "None",
-      "question": "你有几乎nuts，应该如何行动?",
-      "options": [
-        {
-          "action": "Raise",
-          "correct": true,
-          "explanation": "几乎nuts是顶级牌，必须Raise"
-        },
-        {
-          "action": "Call",
-          "correct": false,
-          "explanation": "太弱了，应该Raise"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "绝对不可以Fold"
-        }
-      ],
-      "key_concept": "几乎nuts是2-7中最好的牌"
-    },
-    {
-      "id": 9,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "9♠5♥4♦3♣2♠",
@@ -257,7 +230,7 @@ const DATA_27 = {
       "key_concept": "强牌是2-7中最好的牌"
     },
     {
-      "id": 10,
+      "id": 9,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "7♠6♥4♦3♣2♠",
@@ -284,7 +257,61 @@ const DATA_27 = {
       "key_concept": "几乎nuts是2-7中最好的牌"
     },
     {
+      "id": 10,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2 (不同花)",
+      "action_before": "None",
+      "question": "你有Number 1，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "Number 1是顶级牌，必须Raise"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "太弱了，应该Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "绝对不可以Fold"
+        }
+      ],
+      "key_concept": "Number 1是2-7中最好的牌"
+    },
+    {
       "id": 11,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
+      "action_before": "None",
+      "question": "你有9-7-5-3-2，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "9-7-5-3-2在SB可以Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "9-7-5-3-2可以玩"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "9-low以上是好牌"
+    },
+    {
+      "id": 12,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "9♠6♥4♦3♣2♠",
@@ -311,88 +338,7 @@ const DATA_27 = {
       "key_concept": "9-low以上是好牌"
     },
     {
-      "id": 12,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "T♠6♥4♦3♣2♠",
-      "hand_desc": "T-6-4-3-2",
-      "action_before": "None",
-      "question": "你有T-6-4-3-2，应该如何行动?",
-      "options": [
-        {
-          "action": "Call",
-          "correct": true,
-          "explanation": "T-6-4-3-2在UTG+1应该Call"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "T-6-4-3-2可以玩"
-        },
-        {
-          "action": "Raise",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "9-low以上是好牌"
-    },
-    {
       "id": 13,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
-      "action_before": "None",
-      "question": "你有9-8-5-3-2，应该如何行动?",
-      "options": [
-        {
-          "action": "Raise",
-          "correct": true,
-          "explanation": "9-8-5-3-2在MP可以Raise"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "9-8-5-3-2可以玩"
-        },
-        {
-          "action": "Call",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "9-low以上是好牌"
-    },
-    {
-      "id": 14,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "T♠5♥4♦3♣2♠",
-      "hand_desc": "T-5-4-3-2",
-      "action_before": "None",
-      "question": "你有T-5-4-3-2，应该如何行动?",
-      "options": [
-        {
-          "action": "Call",
-          "correct": true,
-          "explanation": "T-5-4-3-2在UTG应该Call"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "T-5-4-3-2可以玩"
-        },
-        {
-          "action": "Raise",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "9-low以上是好牌"
-    },
-    {
-      "id": 15,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "T♠6♥4♦3♣2♠",
@@ -419,26 +365,26 @@ const DATA_27 = {
       "key_concept": "9-low以上是好牌"
     },
     {
-      "id": 16,
+      "id": 14,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
+      "hand": "T♠6♥4♦3♣2♠",
+      "hand_desc": "T-6-4-3-2",
       "action_before": "None",
-      "question": "你有9-8-5-3-2，应该如何行动?",
+      "question": "你有T-6-4-3-2，应该如何行动?",
       "options": [
         {
-          "action": "Raise",
+          "action": "Call",
           "correct": true,
-          "explanation": "9-8-5-3-2在UTG+1可以Raise"
+          "explanation": "T-6-4-3-2在UTG应该Call"
         },
         {
           "action": "Fold",
           "correct": false,
-          "explanation": "9-8-5-3-2可以玩"
+          "explanation": "T-6-4-3-2可以玩"
         },
         {
-          "action": "Call",
+          "action": "Raise",
           "correct": false,
           "explanation": "错误决策"
         }
@@ -446,7 +392,7 @@ const DATA_27 = {
       "key_concept": "9-low以上是好牌"
     },
     {
-      "id": 17,
+      "id": 15,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "T♠5♥4♦3♣2♠",
@@ -457,7 +403,7 @@ const DATA_27 = {
         {
           "action": "Call",
           "correct": true,
-          "explanation": "T-5-4-3-2在HJ应该Call"
+          "explanation": "T-5-4-3-2在UTG+1应该Call"
         },
         {
           "action": "Fold",
@@ -473,7 +419,88 @@ const DATA_27 = {
       "key_concept": "9-low以上是好牌"
     },
     {
+      "id": 16,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "None",
+      "question": "你有T-5-4-3-2，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "T-5-4-3-2在BTN可以Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "T-5-4-3-2可以玩"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "9-low以上是好牌"
+    },
+    {
+      "id": 17,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
+      "action_before": "None",
+      "question": "你有9-8-5-3-2，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "9-8-5-3-2在CO可以Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "9-8-5-3-2可以玩"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "9-low以上是好牌"
+    },
+    {
       "id": 18,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
+      "action_before": "None",
+      "question": "你有9-8-5-3-2，应该如何行动?",
+      "options": [
+        {
+          "action": "Raise",
+          "correct": true,
+          "explanation": "9-8-5-3-2在HJ可以Raise"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "9-8-5-3-2可以玩"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "9-low以上是好牌"
+    },
+    {
+      "id": 19,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "9♠6♥4♦3♣2♠",
@@ -484,7 +511,7 @@ const DATA_27 = {
         {
           "action": "Raise",
           "correct": true,
-          "explanation": "9-6-4-3-2在BTN可以Raise"
+          "explanation": "9-6-4-3-2在UTG+1可以Raise"
         },
         {
           "action": "Fold",
@@ -500,50 +527,23 @@ const DATA_27 = {
       "key_concept": "9-low以上是好牌"
     },
     {
-      "id": 19,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
-      "action_before": "None",
-      "question": "你有9-8-5-3-2，应该如何行动?",
-      "options": [
-        {
-          "action": "Raise",
-          "correct": true,
-          "explanation": "9-8-5-3-2在BB可以Raise"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "9-8-5-3-2可以玩"
-        },
-        {
-          "action": "Call",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "9-low以上是好牌"
-    },
-    {
       "id": 20,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
+      "hand": "9♠6♥4♦3♣2♠",
+      "hand_desc": "9-6-4-3-2",
       "action_before": "None",
-      "question": "你有9-8-5-3-2，应该如何行动?",
+      "question": "你有9-6-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Raise",
           "correct": true,
-          "explanation": "9-8-5-3-2在UTG+1可以Raise"
+          "explanation": "9-6-4-3-2在MP可以Raise"
         },
         {
           "action": "Fold",
           "correct": false,
-          "explanation": "9-8-5-3-2可以玩"
+          "explanation": "9-6-4-3-2可以玩"
         },
         {
           "action": "Call",
@@ -555,33 +555,6 @@ const DATA_27 = {
     },
     {
       "id": 21,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "5♠5♥4♦3♣2♠",
-      "hand_desc": "一对5",
-      "action_before": "None",
-      "question": "你有一对5，应该如何行动?",
-      "options": [
-        {
-          "action": "Call",
-          "correct": true,
-          "explanation": "有对子Call，换牌打破对子"
-        },
-        {
-          "action": "Raise",
-          "correct": false,
-          "explanation": "有对子不是强牌"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "有小牌可以Call"
-        }
-      ],
-      "key_concept": "有对子Call换牌"
-    },
-    {
-      "id": 22,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "7♠7♥4♦3♣2♠",
@@ -608,13 +581,40 @@ const DATA_27 = {
       "key_concept": "有对子Call换牌"
     },
     {
+      "id": 22,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "7♠7♥7♦3♣2♠",
+      "hand_desc": "三张7",
+      "action_before": "None",
+      "question": "你有三张7，应该如何行动?",
+      "options": [
+        {
+          "action": "Call",
+          "correct": true,
+          "explanation": "有对子Call，换牌打破对子"
+        },
+        {
+          "action": "Raise",
+          "correct": false,
+          "explanation": "有对子不是强牌"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "有小牌可以Call"
+        }
+      ],
+      "key_concept": "有对子Call换牌"
+    },
+    {
       "id": 23,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "5♠5♥4♦3♣2♠",
-      "hand_desc": "一对5",
+      "hand": "7♠7♥7♦3♣2♠",
+      "hand_desc": "三张7",
       "action_before": "None",
-      "question": "你有一对5，应该如何行动?",
+      "question": "你有三张7，应该如何行动?",
       "options": [
         {
           "action": "Call",
@@ -638,10 +638,10 @@ const DATA_27 = {
       "id": 24,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "8♠8♥4♦3♣2♠",
-      "hand_desc": "一对8",
+      "hand": "7♠7♥7♦3♣2♠",
+      "hand_desc": "三张7",
       "action_before": "None",
-      "question": "你有一对8，应该如何行动?",
+      "question": "你有三张7，应该如何行动?",
       "options": [
         {
           "action": "Call",
@@ -692,33 +692,6 @@ const DATA_27 = {
       "id": 26,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠7♥7♦3♣2♠",
-      "hand_desc": "三张7",
-      "action_before": "None",
-      "question": "你有三张7，应该如何行动?",
-      "options": [
-        {
-          "action": "Call",
-          "correct": true,
-          "explanation": "有对子Call，换牌打破对子"
-        },
-        {
-          "action": "Raise",
-          "correct": false,
-          "explanation": "有对子不是强牌"
-        },
-        {
-          "action": "Fold",
-          "correct": false,
-          "explanation": "有小牌可以Call"
-        }
-      ],
-      "key_concept": "有对子Call换牌"
-    },
-    {
-      "id": 27,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
       "hand": "7♠7♥4♦3♣2♠",
       "hand_desc": "一对7",
       "action_before": "None",
@@ -743,7 +716,7 @@ const DATA_27 = {
       "key_concept": "有对子Call换牌"
     },
     {
-      "id": 28,
+      "id": 27,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "8♠8♥4♦3♣2♠",
@@ -770,13 +743,40 @@ const DATA_27 = {
       "key_concept": "有对子Call换牌"
     },
     {
-      "id": 29,
+      "id": 28,
       "category": "起手牌选择",
       "stage": "Pre-draw",
       "hand": "6♠6♥6♦5♣4♠",
       "hand_desc": "三张6",
       "action_before": "None",
       "question": "你有三张6，应该如何行动?",
+      "options": [
+        {
+          "action": "Call",
+          "correct": true,
+          "explanation": "有对子Call，换牌打破对子"
+        },
+        {
+          "action": "Raise",
+          "correct": false,
+          "explanation": "有对子不是强牌"
+        },
+        {
+          "action": "Fold",
+          "correct": false,
+          "explanation": "有小牌可以Call"
+        }
+      ],
+      "key_concept": "有对子Call换牌"
+    },
+    {
+      "id": 29,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
+      "action_before": "None",
+      "question": "你有一对7，应该如何行动?",
       "options": [
         {
           "action": "Call",
@@ -854,15 +854,15 @@ const DATA_27 = {
       "id": 32,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "Q♠7♥4♦3♣2♠",
-      "hand_desc": "Q-7-4-3-2",
+      "hand": "J♠7♥4♦3♣2♠",
+      "hand_desc": "J-7-4-3-2",
       "action_before": "None",
-      "question": "你有Q-7-4-3-2，应该如何行动?",
+      "question": "你有J-7-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "Q-7-4-3-2有小牌可以Call"
+          "explanation": "J-7-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -881,15 +881,15 @@ const DATA_27 = {
       "id": 33,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "A♠7♥4♦3♣2♠",
-      "hand_desc": "A-7-4-3-2",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
       "action_before": "None",
-      "question": "你有A-7-4-3-2，应该如何行动?",
+      "question": "你有K-Q-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "A-7-4-3-2有小牌可以Call"
+          "explanation": "K-Q-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -935,15 +935,15 @@ const DATA_27 = {
       "id": 35,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "J♠7♥4♦3♣2♠",
-      "hand_desc": "J-7-4-3-2",
+      "hand": "A♠7♥4♦3♣2♠",
+      "hand_desc": "A-7-4-3-2",
       "action_before": "None",
-      "question": "你有J-7-4-3-2，应该如何行动?",
+      "question": "你有A-7-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "J-7-4-3-2有小牌可以Call"
+          "explanation": "A-7-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -962,15 +962,15 @@ const DATA_27 = {
       "id": 36,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "A♠7♥4♦3♣2♠",
-      "hand_desc": "A-7-4-3-2",
+      "hand": "K♠7♥4♦3♣2♠",
+      "hand_desc": "K-7-4-3-2",
       "action_before": "None",
-      "question": "你有A-7-4-3-2，应该如何行动?",
+      "question": "你有K-7-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "A-7-4-3-2有小牌可以Call"
+          "explanation": "K-7-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -1043,15 +1043,15 @@ const DATA_27 = {
       "id": 39,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "A♠7♥4♦3♣2♠",
-      "hand_desc": "A-7-4-3-2",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
       "action_before": "None",
-      "question": "你有A-7-4-3-2，应该如何行动?",
+      "question": "你有K-Q-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "A-7-4-3-2有小牌可以Call"
+          "explanation": "K-Q-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -1070,15 +1070,15 @@ const DATA_27 = {
       "id": 40,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
+      "hand": "J♠7♥4♦3♣2♠",
+      "hand_desc": "J-7-4-3-2",
       "action_before": "None",
-      "question": "你有K-7-4-3-2，应该如何行动?",
+      "question": "你有J-7-4-3-2，应该如何行动?",
       "options": [
         {
           "action": "Call",
           "correct": true,
-          "explanation": "K-7-4-3-2有小牌可以Call"
+          "explanation": "J-7-4-3-2有小牌可以Call"
         },
         {
           "action": "Raise",
@@ -1124,6 +1124,33 @@ const DATA_27 = {
       "id": 42,
       "category": "起手牌选择",
       "stage": "Pre-draw",
+      "hand": "7♠6♥5♦4♣3♠",
+      "hand_desc": "7-6-5-4-3",
+      "action_before": "None",
+      "question": "注意！这是什么牌型?",
+      "options": [
+        {
+          "action": "Fold",
+          "correct": true,
+          "explanation": "7-6-5-4-3是顺子！2-7中最差的牌型！"
+        },
+        {
+          "action": "Raise (强牌)",
+          "correct": false,
+          "explanation": "顺子是最差牌！"
+        },
+        {
+          "action": "Call",
+          "correct": false,
+          "explanation": "顺子必须全部换掉"
+        }
+      ],
+      "key_concept": "顺子在2-7中是最差牌！"
+    },
+    {
+      "id": 43,
+      "category": "起手牌选择",
+      "stage": "Pre-draw",
       "hand": "6♠5♥4♦3♣2♠",
       "hand_desc": "6-5-4-3-2",
       "action_before": "None",
@@ -1148,45 +1175,18 @@ const DATA_27 = {
       "key_concept": "顺子在2-7中是最差牌！"
     },
     {
-      "id": 43,
-      "category": "起手牌选择",
-      "stage": "Pre-draw",
-      "hand": "7♠6♥5♦4♣3♠",
-      "hand_desc": "7-6-5-4-3",
-      "action_before": "None",
-      "question": "注意！这是什么牌型?",
-      "options": [
-        {
-          "action": "Fold",
-          "correct": true,
-          "explanation": "7-6-5-4-3是顺子！2-7中最差的牌型！"
-        },
-        {
-          "action": "Raise (强牌)",
-          "correct": false,
-          "explanation": "顺子是最差牌！"
-        },
-        {
-          "action": "Call",
-          "correct": false,
-          "explanation": "顺子必须全部换掉"
-        }
-      ],
-      "key_concept": "顺子在2-7中是最差牌！"
-    },
-    {
       "id": 44,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠6♥5♦4♣3♠",
-      "hand_desc": "7-6-5-4-3",
+      "hand": "6♠5♥4♦3♣2♠",
+      "hand_desc": "6-5-4-3-2",
       "action_before": "None",
       "question": "注意！这是什么牌型?",
       "options": [
         {
           "action": "Fold",
           "correct": true,
-          "explanation": "7-6-5-4-3是顺子！2-7中最差的牌型！"
+          "explanation": "6-5-4-3-2是顺子！2-7中最差的牌型！"
         },
         {
           "action": "Raise (强牌)",
@@ -1205,15 +1205,15 @@ const DATA_27 = {
       "id": 45,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "7♠6♥5♦4♣3♠",
-      "hand_desc": "7-6-5-4-3",
+      "hand": "6♠5♥4♦3♣2♠",
+      "hand_desc": "6-5-4-3-2",
       "action_before": "None",
       "question": "注意！这是什么牌型?",
       "options": [
         {
           "action": "Fold",
           "correct": true,
-          "explanation": "7-6-5-4-3是顺子！2-7中最差的牌型！"
+          "explanation": "6-5-4-3-2是顺子！2-7中最差的牌型！"
         },
         {
           "action": "Raise (强牌)",
@@ -1232,15 +1232,15 @@ const DATA_27 = {
       "id": 46,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "A♠K♥Q♦J♣9♠",
-      "hand_desc": "A-K-Q-J-9",
+      "hand": "Q♠T♥8♦6♣4♠",
+      "hand_desc": "Q-T-8-6-4",
       "action_before": "None",
-      "question": "你有A-K-Q-J-9，应该如何行动?",
+      "question": "你有Q-T-8-6-4，应该如何行动?",
       "options": [
         {
           "action": "Fold",
           "correct": true,
-          "explanation": "A-K-Q-J-9牌太差"
+          "explanation": "Q-T-8-6-4牌太差"
         },
         {
           "action": "Call",
@@ -1286,15 +1286,15 @@ const DATA_27 = {
       "id": 48,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "Q♠T♥8♦6♣4♠",
-      "hand_desc": "Q-T-8-6-4",
+      "hand": "A♠K♥Q♦J♣9♠",
+      "hand_desc": "A-K-Q-J-9",
       "action_before": "None",
-      "question": "你有Q-T-8-6-4，应该如何行动?",
+      "question": "你有A-K-Q-J-9，应该如何行动?",
       "options": [
         {
           "action": "Fold",
           "correct": true,
-          "explanation": "Q-T-8-6-4牌太差"
+          "explanation": "A-K-Q-J-9牌太差"
         },
         {
           "action": "Call",
@@ -1340,15 +1340,15 @@ const DATA_27 = {
       "id": 50,
       "category": "起手牌选择",
       "stage": "Pre-draw",
-      "hand": "K♠Q♥J♦9♣7♠",
-      "hand_desc": "K-Q-J-9-7",
+      "hand": "A♠K♥Q♦J♣9♠",
+      "hand_desc": "A-K-Q-J-9",
       "action_before": "None",
-      "question": "你有K-Q-J-9-7，应该如何行动?",
+      "question": "你有A-K-Q-J-9，应该如何行动?",
       "options": [
         {
           "action": "Fold",
           "correct": true,
-          "explanation": "K-Q-J-9-7牌太差"
+          "explanation": "A-K-Q-J-9牌太差"
         },
         {
           "action": "Call",
@@ -1367,15 +1367,15 @@ const DATA_27 = {
       "id": 51,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "A♠7♥4♦3♣2♠",
-      "hand_desc": "A-7-4-3-2",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有A-7-4-3-2，应该换几张?",
+      "question": "你有9-8-5-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "A是高牌，必须换"
+          "explanation": "换1张9或8"
         },
         {
           "action": "Pat",
@@ -1388,21 +1388,21 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "A是高牌，必须换"
+      "key_concept": "换1张9或8"
     },
     {
       "id": 52,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "9♠7♥5♦3♣2♠",
-      "hand_desc": "9-7-5-3-2",
+      "hand": "J♠7♥4♦3♣2♠",
+      "hand_desc": "J-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有9-7-5-3-2，应该换几张?",
+      "question": "你有J-7-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "换1张9"
+          "explanation": "换1张J"
         },
         {
           "action": "Pat",
@@ -1415,7 +1415,7 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "换1张9"
+      "key_concept": "换1张J"
     },
     {
       "id": 53,
@@ -1448,15 +1448,15 @@ const DATA_27 = {
       "id": 54,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "A♠7♥4♦3♣2♠",
-      "hand_desc": "A-7-4-3-2",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
       "action_before": "Pre-draw call/raise",
-      "question": "你有A-7-4-3-2，应该换几张?",
+      "question": "你有一对7，应该换几张?",
       "options": [
         {
-          "action": "换1张",
+          "action": "换3张",
           "correct": true,
-          "explanation": "A是高牌，必须换"
+          "explanation": "换3张打破对子"
         },
         {
           "action": "Pat",
@@ -1464,26 +1464,26 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换3张",
+          "action": "换1张",
           "correct": false,
-          "explanation": "太多了"
+          "explanation": "不够打破对子"
         }
       ],
-      "key_concept": "A是高牌，必须换"
+      "key_concept": "换3张打破对子"
     },
     {
       "id": 55,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "T♠7♥4♦3♣2♠",
-      "hand_desc": "T-7-4-3-2",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有T-7-4-3-2，应该换几张?",
+      "question": "你有9-7-5-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "换1张T"
+          "explanation": "换1张9"
         },
         {
           "action": "Pat",
@@ -1496,21 +1496,21 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "换1张T"
+      "key_concept": "换1张9"
     },
     {
       "id": 56,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
+      "hand": "K♠7♥4♦3♣2♠",
+      "hand_desc": "K-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有9-5-4-3-2，应该换几张?",
+      "question": "你有K-7-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "9可以换争取更好"
+          "explanation": "换1张K"
         },
         {
           "action": "Pat",
@@ -1523,21 +1523,21 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "9可以换争取更好"
+      "key_concept": "换1张K"
     },
     {
       "id": 57,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "8♠8♥4♦3♣2♠",
-      "hand_desc": "一对8",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有一对8，应该换几张?",
+      "question": "你有K-Q-4-3-2，应该换几张?",
       "options": [
         {
-          "action": "换3张",
+          "action": "换2张",
           "correct": true,
-          "explanation": "换3张打破对子"
+          "explanation": "换2张高牌"
         },
         {
           "action": "Pat",
@@ -1545,26 +1545,26 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换1张",
+          "action": "换2张",
           "correct": false,
-          "explanation": "不够打破对子"
+          "explanation": "错误决策"
         }
       ],
-      "key_concept": "换3张打破对子"
+      "key_concept": "换2张高牌"
     },
     {
       "id": 58,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "T♠8♥5♦3♣2♠",
-      "hand_desc": "T-8-5-3-2",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有T-8-5-3-2，应该换几张?",
+      "question": "你有K-Q-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换2张",
           "correct": true,
-          "explanation": "换2张大牌"
+          "explanation": "换2张高牌"
         },
         {
           "action": "Pat",
@@ -1577,21 +1577,21 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "换2张大牌"
+      "key_concept": "换2张高牌"
     },
     {
       "id": 59,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
+      "hand": "T♠8♥5♦3♣2♠",
+      "hand_desc": "T-8-5-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
+      "question": "你有T-8-5-3-2，应该换几张?",
       "options": [
         {
-          "action": "换1张",
+          "action": "换2张",
           "correct": true,
-          "explanation": "换1张K"
+          "explanation": "换2张大牌"
         },
         {
           "action": "Pat",
@@ -1599,53 +1599,53 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换3张",
+          "action": "换2张",
           "correct": false,
-          "explanation": "太多了"
+          "explanation": "错误决策"
         }
       ],
-      "key_concept": "换1张K"
+      "key_concept": "换2张大牌"
     },
     {
       "id": 60,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "Q♠7♥4♦3♣2♠",
-      "hand_desc": "Q-7-4-3-2",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有Q-7-4-3-2，应该换几张?",
+      "question": "你有7-5-4-3-2，应该换几张?",
       "options": [
         {
-          "action": "换1张",
+          "action": "Pat",
           "correct": true,
-          "explanation": "换1张Q"
+          "explanation": "最强牌不需要换"
         },
         {
-          "action": "Pat",
+          "action": "换1张",
           "correct": false,
           "explanation": "错误决策"
         },
         {
-          "action": "换3张",
+          "action": "换2张",
           "correct": false,
-          "explanation": "太多了"
+          "explanation": "错误决策"
         }
       ],
-      "key_concept": "换1张Q"
+      "key_concept": "最强牌不需要换"
     },
     {
       "id": 61,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "K♠Q♥4♦3♣2♠",
-      "hand_desc": "K-Q-4-3-2",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有K-Q-4-3-2，应该换几张?",
+      "question": "你有9-8-5-3-2，应该换几张?",
       "options": [
         {
-          "action": "换2张",
+          "action": "换1张",
           "correct": true,
-          "explanation": "换2张高牌"
+          "explanation": "换1张9或8"
         },
         {
           "action": "Pat",
@@ -1653,26 +1653,26 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换2张",
+          "action": "换3张",
           "correct": false,
-          "explanation": "错误决策"
+          "explanation": "太多了"
         }
       ],
-      "key_concept": "换2张高牌"
+      "key_concept": "换1张9或8"
     },
     {
       "id": 62,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
       "action_before": "Pre-draw call/raise",
-      "question": "你有9-5-4-3-2，应该换几张?",
+      "question": "你有一对7，应该换几张?",
       "options": [
         {
-          "action": "换1张",
+          "action": "换3张",
           "correct": true,
-          "explanation": "9可以换争取更好"
+          "explanation": "换3张打破对子"
         },
         {
           "action": "Pat",
@@ -1680,134 +1680,26 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换3张",
+          "action": "换1张",
           "correct": false,
-          "explanation": "太多了"
+          "explanation": "不够打破对子"
         }
       ],
-      "key_concept": "9可以换争取更好"
+      "key_concept": "换3张打破对子"
     },
     {
       "id": 63,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有7-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "最强牌不需要换"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "最强牌不需要换"
-    },
-    {
-      "id": 64,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有8-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
-      "id": 65,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "8♠8♥4♦3♣2♠",
-      "hand_desc": "一对8",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有一对8，应该换几张?",
-      "options": [
-        {
-          "action": "换3张",
-          "correct": true,
-          "explanation": "换3张打破对子"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "不够打破对子"
-        }
-      ],
-      "key_concept": "换3张打破对子"
-    },
-    {
-      "id": 66,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "8♠8♥4♦3♣2♠",
-      "hand_desc": "一对8",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有一对8，应该换几张?",
-      "options": [
-        {
-          "action": "换3张",
-          "correct": true,
-          "explanation": "换3张打破对子"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "不够打破对子"
-        }
-      ],
-      "key_concept": "换3张打破对子"
-    },
-    {
-      "id": 67,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有9-5-4-3-2，应该换几张?",
+      "question": "你有9-7-5-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "9可以换争取更好"
+          "explanation": "换1张9"
         },
         {
           "action": "Pat",
@@ -1820,91 +1712,118 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "9可以换争取更好"
+      "key_concept": "换1张9"
+    },
+    {
+      "id": 64,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有一对7，应该换几张?",
+      "options": [
+        {
+          "action": "换3张",
+          "correct": true,
+          "explanation": "换3张打破对子"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "不够打破对子"
+        }
+      ],
+      "key_concept": "换3张打破对子"
+    },
+    {
+      "id": 65,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "T♠7♥4♦3♣2♠",
+      "hand_desc": "T-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有T-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张T"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张T"
+    },
+    {
+      "id": 66,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有9-7-5-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张9"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张9"
+    },
+    {
+      "id": 67,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有9-7-5-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张9"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张9"
     },
     {
       "id": 68,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有8-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
-      "id": 69,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "7♠7♥4♦3♣2♠",
-      "hand_desc": "一对7",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有一对7，应该换几张?",
-      "options": [
-        {
-          "action": "换3张",
-          "correct": true,
-          "explanation": "换3张打破对子"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "不够打破对子"
-        }
-      ],
-      "key_concept": "换3张打破对子"
-    },
-    {
-      "id": 70,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "7♠7♥4♦3♣2♠",
-      "hand_desc": "一对7",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有一对7，应该换几张?",
-      "options": [
-        {
-          "action": "换3张",
-          "correct": true,
-          "explanation": "换3张打破对子"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "不够打破对子"
-        }
-      ],
-      "key_concept": "换3张打破对子"
-    },
-    {
-      "id": 71,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "Q♠7♥4♦3♣2♠",
@@ -1931,18 +1850,18 @@ const DATA_27 = {
       "key_concept": "换1张Q"
     },
     {
-      "id": 72,
+      "id": 69,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
+      "hand": "K♠7♥4♦3♣2♠",
+      "hand_desc": "K-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有9-8-5-3-2，应该换几张?",
+      "question": "你有K-7-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "换1张9或8"
+          "explanation": "换1张K"
         },
         {
           "action": "Pat",
@@ -1955,10 +1874,10 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "换1张9或8"
+      "key_concept": "换1张K"
     },
     {
-      "id": 73,
+      "id": 70,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "A♠7♥4♦3♣2♠",
@@ -1985,45 +1904,18 @@ const DATA_27 = {
       "key_concept": "A是高牌，必须换"
     },
     {
-      "id": 74,
+      "id": 71,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "A♠7♥4♦3♣2♠",
+      "hand_desc": "A-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有7-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "最强牌不需要换"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "最强牌不需要换"
-    },
-    {
-      "id": 75,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
+      "question": "你有A-7-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "换1张K"
+          "explanation": "A是高牌，必须换"
         },
         {
           "action": "Pat",
@@ -2036,118 +1928,10 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "换1张K"
+      "key_concept": "A是高牌，必须换"
     },
     {
-      "id": 76,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠Q♥4♦3♣2♠",
-      "hand_desc": "K-Q-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-Q-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换2张",
-          "correct": true,
-          "explanation": "换2张高牌"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "换2张高牌"
-    },
-    {
-      "id": 77,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "T♠7♥4♦3♣2♠",
-      "hand_desc": "T-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有T-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张T"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张T"
-    },
-    {
-      "id": 78,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张K"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张K"
-    },
-    {
-      "id": 79,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有7-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "最强牌不需要换"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "最强牌不需要换"
-    },
-    {
-      "id": 80,
+      "id": 72,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "9♠5♥4♦3♣2♠",
@@ -2174,34 +1958,7 @@ const DATA_27 = {
       "key_concept": "9可以换争取更好"
     },
     {
-      "id": 81,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有7-5-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "最强牌不需要换"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换2张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "最强牌不需要换"
-    },
-    {
-      "id": 82,
+      "id": 73,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "T♠7♥4♦3♣2♠",
@@ -2228,21 +1985,21 @@ const DATA_27 = {
       "key_concept": "换1张T"
     },
     {
-      "id": 83,
+      "id": 74,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "T♠8♥5♦3♣2♠",
-      "hand_desc": "T-8-5-3-2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有T-8-5-3-2，应该换几张?",
+      "question": "你有8-5-4-3-2，应该换几张?",
       "options": [
         {
-          "action": "换2张",
+          "action": "Pat",
           "correct": true,
-          "explanation": "换2张大牌"
+          "explanation": "8-low可以Pat"
         },
         {
-          "action": "Pat",
+          "action": "换1张",
           "correct": false,
           "explanation": "错误决策"
         },
@@ -2252,21 +2009,21 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "换2张大牌"
+      "key_concept": "8-low可以Pat"
     },
     {
-      "id": 84,
+      "id": 75,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "9♠7♥5♦3♣2♠",
-      "hand_desc": "9-7-5-3-2",
+      "hand": "T♠7♥4♦3♣2♠",
+      "hand_desc": "T-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有9-7-5-3-2，应该换几张?",
+      "question": "你有T-7-4-3-2，应该换几张?",
       "options": [
         {
           "action": "换1张",
           "correct": true,
-          "explanation": "换1张9"
+          "explanation": "换1张T"
         },
         {
           "action": "Pat",
@@ -2279,10 +2036,37 @@ const DATA_27 = {
           "explanation": "太多了"
         }
       ],
-      "key_concept": "换1张9"
+      "key_concept": "换1张T"
     },
     {
-      "id": 85,
+      "id": 76,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有7-5-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "最强牌不需要换"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换2张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "最强牌不需要换"
+    },
+    {
+      "id": 77,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "K♠Q♥4♦3♣2♠",
@@ -2309,7 +2093,34 @@ const DATA_27 = {
       "key_concept": "换2张高牌"
     },
     {
-      "id": 86,
+      "id": 78,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "Q♠7♥4♦3♣2♠",
+      "hand_desc": "Q-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有Q-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张Q"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张Q"
+    },
+    {
+      "id": 79,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "9♠7♥5♦3♣2♠",
@@ -2336,7 +2147,7 @@ const DATA_27 = {
       "key_concept": "换1张9"
     },
     {
-      "id": 87,
+      "id": 80,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "8♠5♥4♦3♣2♠",
@@ -2363,61 +2174,196 @@ const DATA_27 = {
       "key_concept": "8-low可以Pat"
     },
     {
+      "id": 81,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "9♠7♥5♦3♣2♠",
+      "hand_desc": "9-7-5-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有9-7-5-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张9"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张9"
+    },
+    {
+      "id": 82,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有一对7，应该换几张?",
+      "options": [
+        {
+          "action": "换3张",
+          "correct": true,
+          "explanation": "换3张打破对子"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "不够打破对子"
+        }
+      ],
+      "key_concept": "换3张打破对子"
+    },
+    {
+      "id": 83,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "T♠7♥4♦3♣2♠",
+      "hand_desc": "T-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有T-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张T"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张T"
+    },
+    {
+      "id": 84,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "Q♠7♥4♦3♣2♠",
+      "hand_desc": "Q-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有Q-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张Q"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张Q"
+    },
+    {
+      "id": 85,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有一对7，应该换几张?",
+      "options": [
+        {
+          "action": "换3张",
+          "correct": true,
+          "explanation": "换3张打破对子"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "不够打破对子"
+        }
+      ],
+      "key_concept": "换3张打破对子"
+    },
+    {
+      "id": 86,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "T♠7♥4♦3♣2♠",
+      "hand_desc": "T-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有T-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张T"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张T"
+    },
+    {
+      "id": 87,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "T♠8♥5♦3♣2♠",
+      "hand_desc": "T-8-5-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有T-8-5-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换2张",
+          "correct": true,
+          "explanation": "换2张大牌"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换2张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "换2张大牌"
+    },
+    {
       "id": 88,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张K"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张K"
-    },
-    {
-      "id": 89,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张K"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张K"
-    },
-    {
-      "id": 90,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "9♠8♥5♦3♣2♠",
@@ -2444,88 +2390,7 @@ const DATA_27 = {
       "key_concept": "换1张9或8"
     },
     {
-      "id": 91,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "K♠7♥4♦3♣2♠",
-      "hand_desc": "K-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有K-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张K"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张K"
-    },
-    {
-      "id": 92,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "J♠7♥4♦3♣2♠",
-      "hand_desc": "J-7-4-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有J-7-4-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张J"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张J"
-    },
-    {
-      "id": 93,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "8♠8♥4♦3♣2♠",
-      "hand_desc": "一对8",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有一对8，应该换几张?",
-      "options": [
-        {
-          "action": "换3张",
-          "correct": true,
-          "explanation": "换3张打破对子"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "不够打破对子"
-        }
-      ],
-      "key_concept": "换3张打破对子"
-    },
-    {
-      "id": 94,
+      "id": 89,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "A♠7♥4♦3♣2♠",
@@ -2552,61 +2417,142 @@ const DATA_27 = {
       "key_concept": "A是高牌，必须换"
     },
     {
+      "id": 90,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "8♠8♥4♦3♣2♠",
+      "hand_desc": "一对8",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有一对8，应该换几张?",
+      "options": [
+        {
+          "action": "换3张",
+          "correct": true,
+          "explanation": "换3张打破对子"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "不够打破对子"
+        }
+      ],
+      "key_concept": "换3张打破对子"
+    },
+    {
+      "id": 91,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "A♠7♥4♦3♣2♠",
+      "hand_desc": "A-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有A-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "A是高牌，必须换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "A是高牌，必须换"
+    },
+    {
+      "id": 92,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有K-Q-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换2张",
+          "correct": true,
+          "explanation": "换2张高牌"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换2张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "换2张高牌"
+    },
+    {
+      "id": 93,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "K♠Q♥4♦3♣2♠",
+      "hand_desc": "K-Q-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有K-Q-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换2张",
+          "correct": true,
+          "explanation": "换2张高牌"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换2张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "换2张高牌"
+    },
+    {
+      "id": 94,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有一对7，应该换几张?",
+      "options": [
+        {
+          "action": "换3张",
+          "correct": true,
+          "explanation": "换3张打破对子"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "不够打破对子"
+        }
+      ],
+      "key_concept": "换3张打破对子"
+    },
+    {
       "id": 95,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "9♠7♥5♦3♣2♠",
-      "hand_desc": "9-7-5-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有9-7-5-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张9"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张9"
-    },
-    {
-      "id": 96,
-      "category": "第一次换牌",
-      "stage": "Draw 1",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
-      "action_before": "Pre-draw call/raise",
-      "question": "你有9-8-5-3-2，应该换几张?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "换1张9或8"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        },
-        {
-          "action": "换3张",
-          "correct": false,
-          "explanation": "太多了"
-        }
-      ],
-      "key_concept": "换1张9或8"
-    },
-    {
-      "id": 97,
       "category": "第一次换牌",
       "stage": "Draw 1",
       "hand": "J♠7♥4♦3♣2♠",
@@ -2633,18 +2579,18 @@ const DATA_27 = {
       "key_concept": "换1张J"
     },
     {
-      "id": 98,
+      "id": 96,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "T♠8♥5♦3♣2♠",
-      "hand_desc": "T-8-5-3-2",
+      "hand": "7♠7♥4♦3♣2♠",
+      "hand_desc": "一对7",
       "action_before": "Pre-draw call/raise",
-      "question": "你有T-8-5-3-2，应该换几张?",
+      "question": "你有一对7，应该换几张?",
       "options": [
         {
-          "action": "换2张",
+          "action": "换3张",
           "correct": true,
-          "explanation": "换2张大牌"
+          "explanation": "换3张打破对子"
         },
         {
           "action": "Pat",
@@ -2652,26 +2598,80 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换2张",
+          "action": "换1张",
           "correct": false,
-          "explanation": "错误决策"
+          "explanation": "不够打破对子"
         }
       ],
-      "key_concept": "换2张大牌"
+      "key_concept": "换3张打破对子"
+    },
+    {
+      "id": 97,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "K♠7♥4♦3♣2♠",
+      "hand_desc": "K-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有K-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张K"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张K"
+    },
+    {
+      "id": 98,
+      "category": "第一次换牌",
+      "stage": "Draw 1",
+      "hand": "Q♠7♥4♦3♣2♠",
+      "hand_desc": "Q-7-4-3-2",
+      "action_before": "Pre-draw call/raise",
+      "question": "你有Q-7-4-3-2，应该换几张?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "换1张Q"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        },
+        {
+          "action": "换3张",
+          "correct": false,
+          "explanation": "太多了"
+        }
+      ],
+      "key_concept": "换1张Q"
     },
     {
       "id": 99,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "T♠8♥5♦3♣2♠",
-      "hand_desc": "T-8-5-3-2",
+      "hand": "K♠7♥4♦3♣2♠",
+      "hand_desc": "K-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有T-8-5-3-2，应该换几张?",
+      "question": "你有K-7-4-3-2，应该换几张?",
       "options": [
         {
-          "action": "换2张",
+          "action": "换1张",
           "correct": true,
-          "explanation": "换2张大牌"
+          "explanation": "换1张K"
         },
         {
           "action": "Pat",
@@ -2679,53 +2679,53 @@ const DATA_27 = {
           "explanation": "错误决策"
         },
         {
-          "action": "换2张",
+          "action": "换3张",
           "correct": false,
-          "explanation": "错误决策"
+          "explanation": "太多了"
         }
       ],
-      "key_concept": "换2张大牌"
+      "key_concept": "换1张K"
     },
     {
       "id": 100,
       "category": "第一次换牌",
       "stage": "Draw 1",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
+      "hand": "T♠7♥4♦3♣2♠",
+      "hand_desc": "T-7-4-3-2",
       "action_before": "Pre-draw call/raise",
-      "question": "你有8-5-4-3-2，应该换几张?",
+      "question": "你有T-7-4-3-2，应该换几张?",
       "options": [
         {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
           "action": "换1张",
+          "correct": true,
+          "explanation": "换1张T"
+        },
+        {
+          "action": "Pat",
           "correct": false,
           "explanation": "错误决策"
         },
         {
-          "action": "换2张",
+          "action": "换3张",
           "correct": false,
-          "explanation": "错误决策"
+          "explanation": "太多了"
         }
       ],
-      "key_concept": "8-low可以Pat"
+      "key_concept": "换1张T"
     },
     {
       "id": 101,
       "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
+      "stage": "Draw 3",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "对手换3张",
-      "question": "对手换3张，你有8-5-4-3-2，应该?",
+      "question": "对手换3张，你有7-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "8-low可以Pat"
+          "explanation": "Number 1一直Pat"
         },
         {
           "action": "换1张",
@@ -2733,12 +2733,12 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "8-low可以Pat"
+      "key_concept": "Number 1一直Pat"
     },
     {
       "id": 102,
       "category": "Pat决策",
-      "stage": "Draw 3",
+      "stage": "Draw 2",
       "hand": "8♠6♥4♦3♣2♠",
       "hand_desc": "8-6-4-3-2",
       "action_before": "对手换3张",
@@ -2760,159 +2760,27 @@ const DATA_27 = {
     {
       "id": 103,
       "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有8-5-4-3-2，应该?",
+      "stage": "Draw 3",
+      "hand": "9♠6♥4♦3♣2♠",
+      "hand_desc": "9-6-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有9-6-4-3-2，应该?",
       "options": [
         {
-          "action": "Pat",
+          "action": "换1张",
           "correct": true,
-          "explanation": "8-low可以Pat"
+          "explanation": "对手Pat时换9争取更好"
         },
         {
-          "action": "换1张",
+          "action": "Pat",
           "correct": false,
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "8-low可以Pat"
+      "key_concept": "对手Pat时换9争取更好"
     },
     {
       "id": 104,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "9♠6♥4♦3♣2♠",
-      "hand_desc": "9-6-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有9-6-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "对手Pat时换9争取更好"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "对手Pat时换9争取更好"
-    },
-    {
-      "id": 105,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "T♠5♥4♦3♣2♠",
-      "hand_desc": "T-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有T-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "10建议换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "10建议换"
-    },
-    {
-      "id": 106,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有8-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
-      "id": 107,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "T♠5♥4♦3♣2♠",
-      "hand_desc": "T-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有T-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "10建议换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "10建议换"
-    },
-    {
-      "id": 108,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "9♠6♥4♦3♣2♠",
-      "hand_desc": "9-6-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有9-6-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "对手Pat时换9争取更好"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "对手Pat时换9争取更好"
-    },
-    {
-      "id": 109,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "T♠5♥4♦3♣2♠",
-      "hand_desc": "T-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有T-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "10建议换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "10建议换"
-    },
-    {
-      "id": 110,
       "category": "Pat决策",
       "stage": "Draw 2",
       "hand": "9♠5♥4♦3♣2♠",
@@ -2934,18 +2802,18 @@ const DATA_27 = {
       "key_concept": "9可以Pat"
     },
     {
-      "id": 111,
+      "id": 105,
       "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有7-5-4-3-2，应该?",
+      "stage": "Draw 2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有8-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "Number 1一直Pat"
+          "explanation": "8-low可以Pat"
         },
         {
           "action": "换1张",
@@ -2953,16 +2821,16 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "Number 1一直Pat"
+      "key_concept": "8-low可以Pat"
     },
     {
-      "id": 112,
+      "id": 106,
       "category": "Pat决策",
-      "stage": "Draw 2",
+      "stage": "Draw 3",
       "hand": "8♠6♥4♦3♣2♠",
       "hand_desc": "8-6-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有8-6-4-3-2，应该?",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有8-6-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
@@ -2978,9 +2846,53 @@ const DATA_27 = {
       "key_concept": "8-low强牌"
     },
     {
-      "id": 113,
+      "id": 107,
+      "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有T-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "10建议换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "10建议换"
+    },
+    {
+      "id": 108,
       "category": "Pat决策",
       "stage": "Draw 2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有8-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "8-low可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "8-low可以Pat"
+    },
+    {
+      "id": 109,
+      "category": "Pat决策",
+      "stage": "Draw 3",
       "hand": "T♠5♥4♦3♣2♠",
       "hand_desc": "T-5-4-3-2",
       "action_before": "对手换3张",
@@ -3000,18 +2912,18 @@ const DATA_27 = {
       "key_concept": "10建议换"
     },
     {
-      "id": 114,
+      "id": 110,
       "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有7-5-4-3-2，应该?",
+      "stage": "Draw 2",
+      "hand": "8♠6♥4♦3♣2♠",
+      "hand_desc": "8-6-4-3-2",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有8-6-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "Number 1一直Pat"
+          "explanation": "8-low强牌"
         },
         {
           "action": "换1张",
@@ -3019,7 +2931,95 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "Number 1一直Pat"
+      "key_concept": "8-low强牌"
+    },
+    {
+      "id": 111,
+      "category": "Pat决策",
+      "stage": "Draw 2",
+      "hand": "9♠6♥4♦3♣2♠",
+      "hand_desc": "9-6-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有9-6-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "对手Pat时换9争取更好"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "对手Pat时换9争取更好"
+    },
+    {
+      "id": 112,
+      "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "9♠6♥4♦3♣2♠",
+      "hand_desc": "9-6-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有9-6-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "对手Pat时换9争取更好"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "对手Pat时换9争取更好"
+    },
+    {
+      "id": 113,
+      "category": "Pat决策",
+      "stage": "Draw 2",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有T-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "10建议换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "10建议换"
+    },
+    {
+      "id": 114,
+      "category": "Pat决策",
+      "stage": "Draw 2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有8-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "8-low可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "8-low可以Pat"
     },
     {
       "id": 115,
@@ -3046,11 +3046,33 @@ const DATA_27 = {
     {
       "id": 116,
       "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "8♠6♥4♦3♣2♠",
+      "hand_desc": "8-6-4-3-2",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有8-6-4-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "8-low强牌"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "8-low强牌"
+    },
+    {
+      "id": 117,
+      "category": "Pat决策",
       "stage": "Draw 2",
       "hand": "9♠6♥4♦3♣2♠",
       "hand_desc": "9-6-4-3-2",
-      "action_before": "对手换3张",
-      "question": "对手换3张，你有9-6-4-3-2，应该?",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有9-6-4-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -3066,40 +3088,18 @@ const DATA_27 = {
       "key_concept": "对手Pat时换9争取更好"
     },
     {
-      "id": 117,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有8-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
       "id": 118,
       "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有8-5-4-3-2，应该?",
+      "stage": "Draw 2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有9-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "8-low可以Pat"
+          "explanation": "9可以Pat"
         },
         {
           "action": "换1张",
@@ -3107,21 +3107,21 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "8-low可以Pat"
+      "key_concept": "9可以Pat"
     },
     {
       "id": 119,
       "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有7-5-4-3-2，应该?",
+      "stage": "Draw 2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有8-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "Number 1一直Pat"
+          "explanation": "8-low可以Pat"
         },
         {
           "action": "换1张",
@@ -3129,7 +3129,7 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "Number 1一直Pat"
+      "key_concept": "8-low可以Pat"
     },
     {
       "id": 120,
@@ -3137,8 +3137,8 @@ const DATA_27 = {
       "stage": "Draw 3",
       "hand": "8♠6♥4♦3♣2♠",
       "hand_desc": "8-6-4-3-2",
-      "action_before": "对手换3张",
-      "question": "对手换3张，你有8-6-4-3-2，应该?",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有8-6-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
@@ -3156,16 +3156,16 @@ const DATA_27 = {
     {
       "id": 121,
       "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手Pat",
-      "question": "对手Pat，你有8-5-4-3-2，应该?",
+      "stage": "Draw 2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有9-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "8-low可以Pat"
+          "explanation": "9可以Pat"
         },
         {
           "action": "换1张",
@@ -3173,10 +3173,76 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "8-low可以Pat"
+      "key_concept": "9可以Pat"
     },
     {
       "id": 122,
+      "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "9♠6♥4♦3♣2♠",
+      "hand_desc": "9-6-4-3-2",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有9-6-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "对手Pat时换9争取更好"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "对手Pat时换9争取更好"
+    },
+    {
+      "id": 123,
+      "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有T-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "10建议换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "10建议换"
+    },
+    {
+      "id": 124,
+      "category": "Pat决策",
+      "stage": "Draw 2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "对手换1张",
+      "question": "对手换1张，你有9-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "9可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "9可以Pat"
+    },
+    {
+      "id": 125,
       "category": "Pat决策",
       "stage": "Draw 2",
       "hand": "9♠5♥4♦3♣2♠",
@@ -3198,101 +3264,13 @@ const DATA_27 = {
       "key_concept": "9可以Pat"
     },
     {
-      "id": 123,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "T♠5♥4♦3♣2♠",
-      "hand_desc": "T-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有T-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "10建议换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "10建议换"
-    },
-    {
-      "id": 124,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠6♥4♦3♣2♠",
-      "hand_desc": "8-6-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有8-6-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low强牌"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low强牌"
-    },
-    {
-      "id": 125,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手换3张",
-      "question": "对手换3张，你有8-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
       "id": 126,
-      "category": "Pat决策",
-      "stage": "Draw 2",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手换3张",
-      "question": "对手换3张，你有8-5-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low可以Pat"
-    },
-    {
-      "id": 127,
       "category": "Pat决策",
       "stage": "Draw 3",
       "hand": "7♠5♥4♦3♣2♠",
       "hand_desc": "7-5-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有7-5-4-3-2，应该?",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有7-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
@@ -3308,29 +3286,7 @@ const DATA_27 = {
       "key_concept": "Number 1一直Pat"
     },
     {
-      "id": 128,
-      "category": "Pat决策",
-      "stage": "Draw 3",
-      "hand": "8♠6♥4♦3♣2♠",
-      "hand_desc": "8-6-4-3-2",
-      "action_before": "对手换3张",
-      "question": "对手换3张，你有8-6-4-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "8-low强牌"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "8-low强牌"
-    },
-    {
-      "id": 129,
+      "id": 127,
       "category": "Pat决策",
       "stage": "Draw 2",
       "hand": "8♠6♥4♦3♣2♠",
@@ -3352,18 +3308,40 @@ const DATA_27 = {
       "key_concept": "8-low强牌"
     },
     {
-      "id": 130,
+      "id": 128,
       "category": "Pat决策",
       "stage": "Draw 3",
-      "hand": "8♠6♥4♦3♣2♠",
-      "hand_desc": "8-6-4-3-2",
-      "action_before": "对手换1张",
-      "question": "对手换1张，你有8-6-4-3-2，应该?",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "对手Pat",
+      "question": "对手Pat，你有T-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "10建议换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "10建议换"
+    },
+    {
+      "id": 129,
+      "category": "Pat决策",
+      "stage": "Draw 2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有9-5-4-3-2，应该?",
       "options": [
         {
           "action": "Pat",
           "correct": true,
-          "explanation": "8-low强牌"
+          "explanation": "9可以Pat"
         },
         {
           "action": "换1张",
@@ -3371,21 +3349,43 @@ const DATA_27 = {
           "explanation": "错误决策"
         }
       ],
-      "key_concept": "8-low强牌"
+      "key_concept": "9可以Pat"
+    },
+    {
+      "id": 130,
+      "category": "Pat决策",
+      "stage": "Draw 3",
+      "hand": "T♠5♥4♦3♣2♠",
+      "hand_desc": "T-5-4-3-2",
+      "action_before": "对手换3张",
+      "question": "对手换3张，你有T-5-4-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "10建议换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "10建议换"
     },
     {
       "id": 131,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
           "action": "你赢",
           "correct": true,
-          "explanation": "7 < 8"
+          "explanation": "5 < 6"
         },
         {
           "action": "对手赢",
@@ -3393,7 +3393,7 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "7 < 8"
+      "key_concept": "5 < 6"
     },
     {
       "id": 132,
@@ -3421,45 +3421,45 @@ const DATA_27 = {
       "id": 133,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": true,
-          "explanation": "7 < 8"
+          "explanation": "8 < 9"
         },
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "7 < 8"
+      "key_concept": "8 < 9"
     },
     {
       "id": 134,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": true,
-          "explanation": "7 < 8"
+          "explanation": "8 < 9"
         },
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "7 < 8"
+      "key_concept": "8 < 9"
     },
     {
       "id": 135,
@@ -3487,50 +3487,28 @@ const DATA_27 = {
       "id": 136,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
-      "action_before": "对手show 8-6-4-3-2",
-      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "hand": "A♠7♥5♦3♣2♠",
+      "hand_desc": "A-7-5-3-2",
+      "action_before": "对手show 9-8-6-4-2",
+      "question": "你有A-7-5-3-2，对手9-8-6-4-2，谁赢?",
       "options": [
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": true,
-          "explanation": "7 < 8"
+          "explanation": "A是高牌"
         },
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "7 < 8"
+      "key_concept": "A是高牌"
     },
     {
       "id": 137,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "6♠5♥4♦3♣2♠",
-      "hand_desc": "6-5-4-3-2",
-      "action_before": "对手show 顺子",
-      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
-      "options": [
-        {
-          "action": "对手赢",
-          "correct": true,
-          "explanation": "顺子是最差牌"
-        },
-        {
-          "action": "你赢",
-          "correct": false,
-          "explanation": "错误"
-        }
-      ],
-      "key_concept": "顺子是最差牌"
-    },
-    {
-      "id": 138,
-      "category": "Showdown",
-      "stage": "Showdown",
       "hand": "7♠5♥4♦3♣2♠",
       "hand_desc": "7-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
@@ -3550,29 +3528,7 @@ const DATA_27 = {
       "key_concept": "7 < 8"
     },
     {
-      "id": 139,
-      "category": "Showdown",
-      "stage": "Showdown",
-      "hand": "6♠5♥4♦3♣2♠",
-      "hand_desc": "6-5-4-3-2",
-      "action_before": "对手show 顺子",
-      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
-      "options": [
-        {
-          "action": "对手赢",
-          "correct": true,
-          "explanation": "顺子是最差牌"
-        },
-        {
-          "action": "你赢",
-          "correct": false,
-          "explanation": "错误"
-        }
-      ],
-      "key_concept": "顺子是最差牌"
-    },
-    {
-      "id": 140,
+      "id": 138,
       "category": "Showdown",
       "stage": "Showdown",
       "hand": "9♠5♥4♦3♣2♠",
@@ -3594,18 +3550,18 @@ const DATA_27 = {
       "key_concept": "8 < 9"
     },
     {
-      "id": 141,
+      "id": 139,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
           "action": "你赢",
           "correct": true,
-          "explanation": "5 < 6"
+          "explanation": "7 < 8"
         },
         {
           "action": "对手赢",
@@ -3613,7 +3569,51 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "5 < 6"
+      "key_concept": "7 < 8"
+    },
+    {
+      "id": 140,
+      "category": "Showdown",
+      "stage": "Showdown",
+      "hand": "A♠7♥5♦3♣2♠",
+      "hand_desc": "A-7-5-3-2",
+      "action_before": "对手show 9-8-6-4-2",
+      "question": "你有A-7-5-3-2，对手9-8-6-4-2，谁赢?",
+      "options": [
+        {
+          "action": "对手赢",
+          "correct": true,
+          "explanation": "A是高牌"
+        },
+        {
+          "action": "你赢",
+          "correct": false,
+          "explanation": "错误"
+        }
+      ],
+      "key_concept": "A是高牌"
+    },
+    {
+      "id": 141,
+      "category": "Showdown",
+      "stage": "Showdown",
+      "hand": "9♠5♥4♦3♣2♠",
+      "hand_desc": "9-5-4-3-2",
+      "action_before": "对手show 8-6-4-3-2",
+      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "options": [
+        {
+          "action": "对手赢",
+          "correct": true,
+          "explanation": "8 < 9"
+        },
+        {
+          "action": "你赢",
+          "correct": false,
+          "explanation": "错误"
+        }
+      ],
+      "key_concept": "8 < 9"
     },
     {
       "id": 142,
@@ -3641,15 +3641,15 @@ const DATA_27 = {
       "id": 143,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "A♠7♥5♦3♣2♠",
-      "hand_desc": "A-7-5-3-2",
-      "action_before": "对手show 9-8-6-4-2",
-      "question": "你有A-7-5-3-2，对手9-8-6-4-2，谁赢?",
+      "hand": "6♠5♥4♦3♣2♠",
+      "hand_desc": "6-5-4-3-2",
+      "action_before": "对手show 顺子",
+      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
       "options": [
         {
           "action": "对手赢",
           "correct": true,
-          "explanation": "A是高牌"
+          "explanation": "顺子是最差牌"
         },
         {
           "action": "你赢",
@@ -3657,34 +3657,56 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "A是高牌"
+      "key_concept": "顺子是最差牌"
     },
     {
       "id": 144,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": true,
-          "explanation": "8 < 9"
+          "explanation": "7 < 8"
         },
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "8 < 9"
+      "key_concept": "7 < 8"
     },
     {
       "id": 145,
       "category": "Showdown",
       "stage": "Showdown",
+      "hand": "6♠5♥4♦3♣2♠",
+      "hand_desc": "6-5-4-3-2",
+      "action_before": "对手show 顺子",
+      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
+      "options": [
+        {
+          "action": "对手赢",
+          "correct": true,
+          "explanation": "顺子是最差牌"
+        },
+        {
+          "action": "你赢",
+          "correct": false,
+          "explanation": "错误"
+        }
+      ],
+      "key_concept": "顺子是最差牌"
+    },
+    {
+      "id": 146,
+      "category": "Showdown",
+      "stage": "Showdown",
       "hand": "9♠5♥4♦3♣2♠",
       "hand_desc": "9-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
@@ -3702,28 +3724,6 @@ const DATA_27 = {
         }
       ],
       "key_concept": "8 < 9"
-    },
-    {
-      "id": 146,
-      "category": "Showdown",
-      "stage": "Showdown",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
-      "action_before": "对手show 8-6-4-3-2",
-      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
-      "options": [
-        {
-          "action": "你赢",
-          "correct": true,
-          "explanation": "5 < 6"
-        },
-        {
-          "action": "对手赢",
-          "correct": false,
-          "explanation": "错误"
-        }
-      ],
-      "key_concept": "5 < 6"
     },
     {
       "id": 147,
@@ -3751,15 +3751,15 @@ const DATA_27 = {
       "id": 148,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "7♠5♥4♦3♣2♠",
-      "hand_desc": "7-5-4-3-2",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
           "action": "你赢",
           "correct": true,
-          "explanation": "7 < 8"
+          "explanation": "5 < 6"
         },
         {
           "action": "对手赢",
@@ -3767,7 +3767,7 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "7 < 8"
+      "key_concept": "5 < 6"
     },
     {
       "id": 149,
@@ -3817,45 +3817,45 @@ const DATA_27 = {
       "id": 151,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "6♠5♥4♦3♣2♠",
-      "hand_desc": "6-5-4-3-2",
-      "action_before": "对手show 顺子",
-      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
+      "hand": "8♠5♥4♦3♣2♠",
+      "hand_desc": "8-5-4-3-2",
+      "action_before": "对手show 8-6-4-3-2",
+      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": true,
-          "explanation": "顺子是最差牌"
+          "explanation": "5 < 6"
         },
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "顺子是最差牌"
+      "key_concept": "5 < 6"
     },
     {
       "id": 152,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
-          "action": "对手赢",
+          "action": "你赢",
           "correct": true,
-          "explanation": "8 < 9"
+          "explanation": "7 < 8"
         },
         {
-          "action": "你赢",
+          "action": "对手赢",
           "correct": false,
           "explanation": "错误"
         }
       ],
-      "key_concept": "8 < 9"
+      "key_concept": "7 < 8"
     },
     {
       "id": 153,
@@ -3905,15 +3905,15 @@ const DATA_27 = {
       "id": 155,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "8♠5♥4♦3♣2♠",
-      "hand_desc": "8-5-4-3-2",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
       "action_before": "对手show 8-6-4-3-2",
-      "question": "你有8-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
       "options": [
         {
           "action": "你赢",
           "correct": true,
-          "explanation": "5 < 6"
+          "explanation": "7 < 8"
         },
         {
           "action": "对手赢",
@@ -3921,32 +3921,10 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "5 < 6"
+      "key_concept": "7 < 8"
     },
     {
       "id": 156,
-      "category": "Showdown",
-      "stage": "Showdown",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
-      "action_before": "对手show 8-6-4-3-2",
-      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
-      "options": [
-        {
-          "action": "对手赢",
-          "correct": true,
-          "explanation": "8 < 9"
-        },
-        {
-          "action": "你赢",
-          "correct": false,
-          "explanation": "错误"
-        }
-      ],
-      "key_concept": "8 < 9"
-    },
-    {
-      "id": 157,
       "category": "Showdown",
       "stage": "Showdown",
       "hand": "A♠7♥5♦3♣2♠",
@@ -3968,18 +3946,40 @@ const DATA_27 = {
       "key_concept": "A是高牌"
     },
     {
+      "id": 157,
+      "category": "Showdown",
+      "stage": "Showdown",
+      "hand": "7♠5♥4♦3♣2♠",
+      "hand_desc": "7-5-4-3-2",
+      "action_before": "对手show 8-6-4-3-2",
+      "question": "你有7-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "options": [
+        {
+          "action": "你赢",
+          "correct": true,
+          "explanation": "7 < 8"
+        },
+        {
+          "action": "对手赢",
+          "correct": false,
+          "explanation": "错误"
+        }
+      ],
+      "key_concept": "7 < 8"
+    },
+    {
       "id": 158,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "9♠5♥4♦3♣2♠",
-      "hand_desc": "9-5-4-3-2",
-      "action_before": "对手show 8-6-4-3-2",
-      "question": "你有9-5-4-3-2，对手8-6-4-3-2，谁赢?",
+      "hand": "A♠7♥5♦3♣2♠",
+      "hand_desc": "A-7-5-3-2",
+      "action_before": "对手show 9-8-6-4-2",
+      "question": "你有A-7-5-3-2，对手9-8-6-4-2，谁赢?",
       "options": [
         {
           "action": "对手赢",
           "correct": true,
-          "explanation": "8 < 9"
+          "explanation": "A是高牌"
         },
         {
           "action": "你赢",
@@ -3987,7 +3987,7 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "8 < 9"
+      "key_concept": "A是高牌"
     },
     {
       "id": 159,
@@ -4015,15 +4015,15 @@ const DATA_27 = {
       "id": 160,
       "category": "Showdown",
       "stage": "Showdown",
-      "hand": "6♠5♥4♦3♣2♠",
-      "hand_desc": "6-5-4-3-2",
-      "action_before": "对手show 顺子",
-      "question": "你有6-5-4-3-2，对手顺子，谁赢?",
+      "hand": "A♠7♥5♦3♣2♠",
+      "hand_desc": "A-7-5-3-2",
+      "action_before": "对手show 9-8-6-4-2",
+      "question": "你有A-7-5-3-2，对手9-8-6-4-2，谁赢?",
       "options": [
         {
           "action": "对手赢",
           "correct": true,
-          "explanation": "顺子是最差牌"
+          "explanation": "A是高牌"
         },
         {
           "action": "你赢",
@@ -4031,16 +4031,16 @@ const DATA_27 = {
           "explanation": "错误"
         }
       ],
-      "key_concept": "顺子是最差牌"
+      "key_concept": "A是高牌"
     },
     {
       "id": 161,
-      "category": "第三次换牌",
-      "stage": "Draw 2",
-      "hand": "K♠7♥5♦3♣2♠",
-      "hand_desc": "K-7-5-3-2",
+      "category": "第二次换牌",
+      "stage": "Draw 3",
+      "hand": "T♠7♥5♦3♣2♠",
+      "hand_desc": "T-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有K-7-5-3-2，应该?",
+      "question": "你有T-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4057,7 +4057,7 @@ const DATA_27 = {
     },
     {
       "id": 162,
-      "category": "第二次换牌",
+      "category": "第三次换牌",
       "stage": "Draw 3",
       "hand": "J♠7♥5♦3♣2♠",
       "hand_desc": "J-7-5-3-2",
@@ -4081,10 +4081,10 @@ const DATA_27 = {
       "id": 163,
       "category": "第二次换牌",
       "stage": "Draw 2",
-      "hand": "T♠7♥5♦3♣2♠",
-      "hand_desc": "T-7-5-3-2",
+      "hand": "J♠7♥5♦3♣2♠",
+      "hand_desc": "J-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有T-7-5-3-2，应该?",
+      "question": "你有J-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4102,11 +4102,11 @@ const DATA_27 = {
     {
       "id": 164,
       "category": "第三次换牌",
-      "stage": "Draw 2",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
+      "stage": "Draw 3",
+      "hand": "J♠7♥5♦3♣2♠",
+      "hand_desc": "J-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
+      "question": "你有J-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4123,12 +4123,12 @@ const DATA_27 = {
     },
     {
       "id": 165,
-      "category": "第二次换牌",
-      "stage": "Draw 3",
-      "hand": "T♠7♥5♦3♣2♠",
-      "hand_desc": "T-7-5-3-2",
+      "category": "第三次换牌",
+      "stage": "Draw 2",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有T-7-5-3-2，应该?",
+      "question": "你有K-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4147,18 +4147,18 @@ const DATA_27 = {
       "id": 166,
       "category": "第二次换牌",
       "stage": "Draw 2",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
+      "hand": "J♠7♥5♦3♣2♠",
+      "hand_desc": "J-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有9-8-5-3-2，应该?",
+      "question": "你有J-7-5-3-2，应该?",
       "options": [
         {
-          "action": "Pat",
+          "action": "换1张",
           "correct": true,
-          "explanation": "可以Pat"
+          "explanation": "有大牌继续换"
         },
         {
-          "action": "换1张",
+          "action": "Pat",
           "correct": false,
           "explanation": "错误决策"
         }
@@ -4167,7 +4167,7 @@ const DATA_27 = {
     },
     {
       "id": 167,
-      "category": "第二次换牌",
+      "category": "第三次换牌",
       "stage": "Draw 2",
       "hand": "Q♠8♥5♦3♣2♠",
       "hand_desc": "Q-8-5-3-2",
@@ -4189,12 +4189,12 @@ const DATA_27 = {
     },
     {
       "id": 168,
-      "category": "第三次换牌",
-      "stage": "Draw 3",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
+      "category": "第二次换牌",
+      "stage": "Draw 2",
+      "hand": "J♠7♥5♦3♣2♠",
+      "hand_desc": "J-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
+      "question": "你有J-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4213,10 +4213,10 @@ const DATA_27 = {
       "id": 169,
       "category": "第三次换牌",
       "stage": "Draw 2",
-      "hand": "J♠7♥5♦3♣2♠",
-      "hand_desc": "J-7-5-3-2",
+      "hand": "T♠7♥5♦3♣2♠",
+      "hand_desc": "T-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有J-7-5-3-2，应该?",
+      "question": "你有T-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4255,30 +4255,8 @@ const DATA_27 = {
     },
     {
       "id": 171,
-      "category": "第二次换牌",
+      "category": "第三次换牌",
       "stage": "Draw 2",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 172,
-      "category": "第二次换牌",
-      "stage": "Draw 3",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
       "action_before": "继续抽牌",
@@ -4298,9 +4276,31 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 173,
+      "id": 172,
       "category": "第三次换牌",
       "stage": "Draw 3",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有K-7-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 173,
+      "category": "第三次换牌",
+      "stage": "Draw 2",
       "hand": "T♠7♥5♦3♣2♠",
       "hand_desc": "T-7-5-3-2",
       "action_before": "继续抽牌",
@@ -4322,28 +4322,6 @@ const DATA_27 = {
     {
       "id": 174,
       "category": "第三次换牌",
-      "stage": "Draw 3",
-      "hand": "J♠7♥5♦3♣2♠",
-      "hand_desc": "J-7-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有J-7-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 175,
-      "category": "第二次换牌",
       "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
@@ -4364,8 +4342,8 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 176,
-      "category": "第三次换牌",
+      "id": 175,
+      "category": "第二次换牌",
       "stage": "Draw 2",
       "hand": "T♠7♥5♦3♣2♠",
       "hand_desc": "T-7-5-3-2",
@@ -4386,9 +4364,31 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
+      "id": 176,
+      "category": "第三次换牌",
+      "stage": "Draw 2",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有9-8-5-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
       "id": 177,
       "category": "第三次换牌",
-      "stage": "Draw 3",
+      "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
       "action_before": "继续抽牌",
@@ -4409,8 +4409,8 @@ const DATA_27 = {
     },
     {
       "id": 178,
-      "category": "第三次换牌",
-      "stage": "Draw 2",
+      "category": "第二次换牌",
+      "stage": "Draw 3",
       "hand": "J♠7♥5♦3♣2♠",
       "hand_desc": "J-7-5-3-2",
       "action_before": "继续抽牌",
@@ -4431,50 +4431,6 @@ const DATA_27 = {
     },
     {
       "id": 179,
-      "category": "第三次换牌",
-      "stage": "Draw 2",
-      "hand": "T♠7♥5♦3♣2♠",
-      "hand_desc": "T-7-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有T-7-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 180,
-      "category": "第三次换牌",
-      "stage": "Draw 2",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有9-8-5-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 181,
       "category": "第二次换牌",
       "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
@@ -4496,8 +4452,52 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 182,
+      "id": 180,
       "category": "第三次换牌",
+      "stage": "Draw 3",
+      "hand": "T♠7♥5♦3♣2♠",
+      "hand_desc": "T-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有T-7-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 181,
+      "category": "第三次换牌",
+      "stage": "Draw 3",
+      "hand": "Q♠8♥5♦3♣2♠",
+      "hand_desc": "Q-8-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有Q-8-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 182,
+      "category": "第二次换牌",
       "stage": "Draw 3",
       "hand": "K♠7♥5♦3♣2♠",
       "hand_desc": "K-7-5-3-2",
@@ -4541,29 +4541,7 @@ const DATA_27 = {
     },
     {
       "id": 184,
-      "category": "第二次换牌",
-      "stage": "Draw 2",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 185,
-      "category": "第二次换牌",
+      "category": "第三次换牌",
       "stage": "Draw 2",
       "hand": "J♠7♥5♦3♣2♠",
       "hand_desc": "J-7-5-3-2",
@@ -4584,8 +4562,30 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 186,
+      "id": 185,
       "category": "第三次换牌",
+      "stage": "Draw 3",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有K-7-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 186,
+      "category": "第二次换牌",
       "stage": "Draw 3",
       "hand": "Q♠8♥5♦3♣2♠",
       "hand_desc": "Q-8-5-3-2",
@@ -4607,7 +4607,7 @@ const DATA_27 = {
     },
     {
       "id": 187,
-      "category": "第三次换牌",
+      "category": "第二次换牌",
       "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
@@ -4629,72 +4629,6 @@ const DATA_27 = {
     },
     {
       "id": 188,
-      "category": "第三次换牌",
-      "stage": "Draw 3",
-      "hand": "T♠7♥5♦3♣2♠",
-      "hand_desc": "T-7-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有T-7-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 189,
-      "category": "第二次换牌",
-      "stage": "Draw 3",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 190,
-      "category": "第二次换牌",
-      "stage": "Draw 3",
-      "hand": "T♠7♥5♦3♣2♠",
-      "hand_desc": "T-7-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有T-7-5-3-2，应该?",
-      "options": [
-        {
-          "action": "换1张",
-          "correct": true,
-          "explanation": "有大牌继续换"
-        },
-        {
-          "action": "Pat",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
-      "id": 191,
       "category": "第二次换牌",
       "stage": "Draw 3",
       "hand": "9♠8♥5♦3♣2♠",
@@ -4716,9 +4650,9 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 192,
+      "id": 189,
       "category": "第二次换牌",
-      "stage": "Draw 2",
+      "stage": "Draw 3",
       "hand": "T♠7♥5♦3♣2♠",
       "hand_desc": "T-7-5-3-2",
       "action_before": "继续抽牌",
@@ -4738,13 +4672,35 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 193,
+      "id": 190,
       "category": "第二次换牌",
       "stage": "Draw 3",
-      "hand": "Q♠8♥5♦3♣2♠",
-      "hand_desc": "Q-8-5-3-2",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有Q-8-5-3-2，应该?",
+      "question": "你有9-8-5-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 191,
+      "category": "第二次换牌",
+      "stage": "Draw 3",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有K-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4760,7 +4716,7 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 194,
+      "id": 192,
       "category": "第二次换牌",
       "stage": "Draw 3",
       "hand": "J♠7♥5♦3♣2♠",
@@ -4782,9 +4738,53 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
+      "id": 193,
+      "category": "第二次换牌",
+      "stage": "Draw 2",
+      "hand": "9♠8♥5♦3♣2♠",
+      "hand_desc": "9-8-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有9-8-5-3-2，应该?",
+      "options": [
+        {
+          "action": "Pat",
+          "correct": true,
+          "explanation": "可以Pat"
+        },
+        {
+          "action": "换1张",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 194,
+      "category": "第三次换牌",
+      "stage": "Draw 3",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有K-7-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
       "id": 195,
       "category": "第二次换牌",
-      "stage": "Draw 3",
+      "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
       "action_before": "继续抽牌",
@@ -4806,6 +4806,28 @@ const DATA_27 = {
     {
       "id": 196,
       "category": "第二次换牌",
+      "stage": "Draw 3",
+      "hand": "J♠7♥5♦3♣2♠",
+      "hand_desc": "J-7-5-3-2",
+      "action_before": "继续抽牌",
+      "question": "你有J-7-5-3-2，应该?",
+      "options": [
+        {
+          "action": "换1张",
+          "correct": true,
+          "explanation": "有大牌继续换"
+        },
+        {
+          "action": "Pat",
+          "correct": false,
+          "explanation": "错误决策"
+        }
+      ],
+      "key_concept": "看大牌数量决策"
+    },
+    {
+      "id": 197,
+      "category": "第三次换牌",
       "stage": "Draw 2",
       "hand": "K♠7♥5♦3♣2♠",
       "hand_desc": "K-7-5-3-2",
@@ -4826,13 +4848,13 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 197,
-      "category": "第二次换牌",
-      "stage": "Draw 2",
-      "hand": "J♠7♥5♦3♣2♠",
-      "hand_desc": "J-7-5-3-2",
+      "id": 198,
+      "category": "第三次换牌",
+      "stage": "Draw 3",
+      "hand": "K♠7♥5♦3♣2♠",
+      "hand_desc": "K-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有J-7-5-3-2，应该?",
+      "question": "你有K-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
@@ -4848,31 +4870,9 @@ const DATA_27 = {
       "key_concept": "看大牌数量决策"
     },
     {
-      "id": 198,
-      "category": "第三次换牌",
-      "stage": "Draw 3",
-      "hand": "9♠8♥5♦3♣2♠",
-      "hand_desc": "9-8-5-3-2",
-      "action_before": "继续抽牌",
-      "question": "你有9-8-5-3-2，应该?",
-      "options": [
-        {
-          "action": "Pat",
-          "correct": true,
-          "explanation": "可以Pat"
-        },
-        {
-          "action": "换1张",
-          "correct": false,
-          "explanation": "错误决策"
-        }
-      ],
-      "key_concept": "看大牌数量决策"
-    },
-    {
       "id": 199,
       "category": "第二次换牌",
-      "stage": "Draw 3",
+      "stage": "Draw 2",
       "hand": "9♠8♥5♦3♣2♠",
       "hand_desc": "9-8-5-3-2",
       "action_before": "继续抽牌",
@@ -4893,12 +4893,12 @@ const DATA_27 = {
     },
     {
       "id": 200,
-      "category": "第二次换牌",
-      "stage": "Draw 3",
-      "hand": "J♠7♥5♦3♣2♠",
-      "hand_desc": "J-7-5-3-2",
+      "category": "第三次换牌",
+      "stage": "Draw 2",
+      "hand": "T♠7♥5♦3♣2♠",
+      "hand_desc": "T-7-5-3-2",
       "action_before": "继续抽牌",
-      "question": "你有J-7-5-3-2，应该?",
+      "question": "你有T-7-5-3-2，应该?",
       "options": [
         {
           "action": "换1张",
