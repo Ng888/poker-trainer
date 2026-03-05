@@ -75,7 +75,14 @@ const app = {
     
     // 开始练习
     startQuiz(numQuestions) {
-        const data = this.currentGame === 'nlhe' ? NLHE_DATA : PLO_DATA;
+        let data;
+        if (this.currentGame === 'nlhe') {
+            data = NLHE_DATA;
+        } else if (this.currentGame === 'plo') {
+            data = PLO_DATA;
+        } else if (this.currentGame === '27') {
+            data = DATA_27;
+        }
         
         // 筛选题目
         let scenarios = data.scenarios;
