@@ -27,6 +27,9 @@ const app = {
         } else if (game === '27') {
             data = DATA_27;
             title = '2-7 Triple Draw';
+        } else if (game === 'stud') {
+            data = STUD_DATA;
+            title = 'Stud 变体';
         }
         
         // 更新分类页面
@@ -82,6 +85,8 @@ const app = {
             data = PLO_DATA;
         } else if (this.currentGame === '27') {
             data = DATA_27;
+        } else if (this.currentGame === 'stud') {
+            data = STUD_DATA;
         }
         
         // 筛选题目
