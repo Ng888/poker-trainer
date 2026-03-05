@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Trainer Pro - MTT练习系统</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- 首页 -->
+        <div id="home-page" class="page active">
+            <header class="header">
+                <h1>🃏 Poker Trainer Pro</h1>
+                <p class="subtitle">MTT牌谱分析练习系统</p>
+            </header>
+            
+            <div class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-number">190</div>
+                    <div class="stat-label">NLHE题目</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">PLO题目</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">分类</div>
+                </div>
+            </div>
+
+            <div class="game-selection">
+                <h2>选择游戏类型</h2>
+                <div class="game-cards">
+                    <div class="game-card" onclick="app.selectGame('nlhe')">
+                        <div class="game-icon">♠️</div>
+                        <h3>Texas Hold'em</h3>
+                        <p>190题完整题库</p>
+                        <span class="badge">NLHE</span>
+                    </div>
+                    <div class="game-card" onclick="app.selectGame('plo')">
+                        <div class="game-icon">🃏</div>
+                        <h3>Pot Limit Omaha</h3>
+                        <p>12题核心场景</p>
+                        <span class="badge">PLO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 分类选择页 -->
+        <div id="category-page" class="page">
+            <header class="header">
+                <button class="btn-back" onclick="app.goHome()">← 返回</button>
+                <h1 id="category-title">选择分类</h1>
+            </header>
+            
+            <div class="mode-selection">
+                <h3>练习模式</h3>
+                <div class="mode-buttons">
+                    <button class="mode-btn" onclick="app.startQuiz(10)">🎲 快速 (10题)</button>
+                    <button class="mode-btn" onclick="app.startQuiz(25)">📖 标准 (25题)</button>
+                    <button class="mode-btn" onclick="app.startQuiz(null)">🏆 完整 (全部)</button>
+                </div>
+            </div>
+
+            <div class="categories" id="categories-list">
+                <!-- 动态生成分类 -->
+            </div>
+        </div>
+
+        <!-- 练习页面 -->
+        <div id="quiz-page" class="page">
+            <header class="header quiz-header">
+                <button class="btn-back" onclick="app.quitQuiz()">✕ 退出</button>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="quiz-stats">
+                    <span id="current-question">1</span> / <span id="total-questions">10</span>
+                </div>
+            </header>
+
+            <div class="quiz-container">
+                <div class="scenario-card" id="scenario-card">
+                    <!-- 动态生成题目 -->
+                </div>
+
+                <div class="options-container" id="options-container">
+                    <!-- 动态生成选项 -->
+                </div>
+
+                <div class="feedback-card hidden" id="feedback-card">
+                    <div class="feedback-icon" id="feedback-icon"></div>
+                    <div class="feedback-content">
+                        <h3 id="feedback-title"></h3>
+                        <p id="feedback-text"></p>
+                        <div class="key-concept" id="key-concept"></div>
+                    </div>
+                    <button class="btn-next" id="btn-next" onclick="app.nextQuestion()">下一题 →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 结果页面 -->
+        <div id="result-page" class="page">
+            <div class="result-container">
+                <div class="result-emoji" id="result-emoji">🏆</div>
+                <h1>练习完成!</h1>
+                <div class="result-score">
+                    <div class="score-circle">
+                        <span id="score-percent">0%</span>
+                    </div>
+                    <p class="score-text">
+                        <span id="score-correct">0</span> / <span id="score-total">0</span> 正确
+                    </p>
+                </div>
+                <div class="result-message" id="result-message"></div>
+                <div class="result-actions">
+                    <button class="btn-primary" onclick="app.restartQuiz()">🔄 再练一次</button>
+                    <button class="btn-secondary" onclick="app.goHome()">🏠 返回首页</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="nlhe_data.js"></script>
+    <script src="plo_data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
