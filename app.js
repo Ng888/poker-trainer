@@ -25,7 +25,7 @@ const app = {
             data = PLO_DATA;
             title = 'Pot Limit Omaha';
         } else if (game === '27') {
-            data = TRIPLE_DRAW_DATA;
+            data = DATA_27;
             title = '2-7 Triple Draw';
         }
         

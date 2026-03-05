@@ -1,4 +1,4 @@
-const TRIPLE_DRAW_DATA = {
+const DATA_27 = {
   "metadata": {
     "game": "2-7 Triple Draw",
     "total_scenarios": 200,
