@@ -30,6 +30,9 @@ const app = {
         } else if (game === 'stud') {
             data = STUD_DATA;
             title = 'Stud 变体';
+        } else if (game === 'a5') {
+            data = A5_DATA;
+            title = 'A-5 Lowball';
         }
         
         // 更新分类页面
@@ -87,6 +90,8 @@ const app = {
             data = DATA_27;
         } else if (this.currentGame === 'stud') {
             data = STUD_DATA;
+        } else if (this.currentGame === 'a5') {
+            data = A5_DATA;
         }
         
         // 筛选题目
