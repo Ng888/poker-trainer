@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牌谱分析器 - Poker Trainer Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .analyzer-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .analyzer-form {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px 15px;
+            background: var(--bg-card);
+            border: 2px solid var(--bg-card);
+            border-radius: var(--border-radius);
+            color: var(--text-primary);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--accent-primary);
+        }
+        
+        .hand-input {
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        
+        .analyze-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            border: none;
+            border-radius: var(--border-radius);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .analyze-btn:hover {
+            transform: scale(1.02);
+        }
+        
+        .result-card {
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            display: none;
+        }
+        
+        .result-card.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .recommendation {
+            text-align: center;
+            padding: 30px;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            margin-bottom: 25px;
+        }
+        
+        .recommendation-action {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .recommendation-action.allin {
+            color: var(--error);
+        }
+        
+        .recommendation-action.open {
+            color: var(--success);
+        }
+        
+        .recommendation-action.fold {
+            color: var(--text-secondary);
+        }
+        
+        .recommendation-action.call {
+            color: var(--warning);
+        }
+        
+        .hand-strength-meter {
+            margin: 25px 0;
+        }
+        
+        .strength-bar {
+            height: 30px;
+            background: var(--bg-card);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .strength-fill {
+            height: 100%;
+            border-radius: 15px;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .strength-fill.weak { background: #ef4444; }
+        .strength-fill.medium { background: #f59e0b; }
+        .strength-fill.strong { background: #22c55e; }
+        .strength-fill.premium { background: linear-gradient(90deg, #3b82f6, #8b5cf6); }
+        
+        .analysis-details {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .detail-item {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent-primary);
+        }
+        
+        .detail-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .examples {
+            margin-top: 30px;
+            padding: 20px;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+        }
+        
+        .examples h3 {
+            margin-bottom: 15px;
+        }
+        
+        .example-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .example-item:hover {
+            background: var(--accent-primary);
+        }
+        
+        @media (max-width: 600px) {
+            .analyzer-container {
+                padding: 10px;
+            }
+            
+            .analyzer-form {
+                padding: 20px;
+            }
+            
+            .recommendation-action {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="analyzer-container">
+        <header class="header">
+            <button class="btn-back" onclick="window.location.href='index.html'">← 返回</button>
+            <h1>🔍 牌谱分析器</h1>
+            <p class="subtitle">输入你的手牌，获取GTO建议</p>
+        </header>
+
+        <div class="analyzer-form">
+            <div class="form-group">
+                <label>你的手牌</label>
+                <input type="text" id="hand" class="hand-input" placeholder="AKs 或 A♠K♠" maxlength="10">
+                <small style="color: var(--text-secondary); display: block; margin-top: 5px;">支持格式: AKs, AKo, A♠K♠, A K</small>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>位置</label>
+                    <select id="position">
+                        <option value="UTG">UTG</option>
+                        <option value="UTG+1">UTG+1</option>
+                        <option value="MP">MP</option>
+                        <option value="HJ">HJ</option>
+                        <option value="CO">CO</option>
+                        <option value="BTN" selected>BTN</option>
+                        <option value="SB">SB</option>
+                        <option value="BB">BB</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>筹码深度 (bb)</label>
+                    <input type="number" id="stack" value="100" min="1" max="500">
+                </div>
+
+                <div class="form-group">
+                    <label>阶段</label>
+                    <select id="stage">
+                        <option value="preflop" selected>翻牌前</option>
+                        <option value="flop">翻牌</option>
+                        <option value="turn">转牌</option>
+                        <option value="river">河牌</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" id="board-group" style="display: none;">
+                <label>公共牌</label>
+                <input type="text" id="board" class="hand-input" placeholder="Q♠ J♠ T♦" maxlength="15">
+                <small style="color: var(--text-secondary); display: block; margin-top: 5px;">输入翻牌/转牌/河牌</small>
+            </div>
+
+            <button class="analyze-btn" onclick="analyzeHand()">开始分析</button>
+        </div>
+
+        <div class="result-card" id="result">
+            <div class="recommendation">
+                <div class="recommendation-action" id="recommendation-action">Open 2.5x</div>
+                <p id="recommendation-text">AKs是顶级牌，任何位置都open</p>
+            </div>
+
+            <div class="hand-strength-meter">
+                <label style="display: block; margin-bottom: 10px; color: var(--text-secondary);">手牌强度</label>
+                <div class="strength-bar">
+                    <div class="strength-fill" id="strength-fill" style="width: 0%;">0%</div>
+                </div>
+            </div>
+
+            <div class="analysis-details">
+                <div class="detail-item">
+                    <div class="detail-label">手牌类型</div>
+                    <div class="detail-value" id="hand-category">Premium Suited</div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">GTO建议</div>
+                    <div class="detail-value" id="gto-advice">Open 2.5x</div>
+                </div>
+
+                <div class="detail-item">
+                    <div class="detail-label">Equity估算</div>
+                    <div class="detail-value" id="equity">~65% vs随机手牌</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="examples">
+            <h3>📝 快速示例 (点击填充)</h3>
+            <div class="example-item" onclick="fillExample('AKs', 'UTG', 100, 'preflop')">
+                <span>AKs - UTG - 100bb</span>
+                <span>→ Open</span>
+            </div>
+            <div class="example-item" onclick="fillExample('77', 'CO', 100, 'preflop')">
+                <span>77 - CO - 100bb</span>
+                <span>→ Open (Set Mine)</span>
+            </div>
+            <div class="example-item" onclick="fillExample('AKs', 'SB', 15, 'preflop')">
+                <span>AKs - SB - 15bb</span>
+                <span>→ Allin</span>
+            </div>
+            <div class="example-item" onclick="fillExample('98s', 'UTG', 100, 'preflop')">
+                <span>98s - UTG - 100bb</span>
+                <span>→ Fold</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="analyzer.js"></script>
+    <script>
+        // 监听阶段变化
+        document.getElementById('stage').addEventListener('change', function() {
+            const boardGroup = document.getElementById('board-group');
+            if (this.value !== 'preflop') {
+                boardGroup.style.display = 'block';
+            } else {
+                boardGroup.style.display = 'none';
+            }
+        });
+
+        // 填充示例
+        function fillExample(hand, position, stack, stage) {
+            document.getElementById('hand').value = hand;
+            document.getElementById('position').value = position;
+            document.getElementById('stack').value = stack;
+            document.getElementById('stage').value = stage;
+            
+            // 触发阶段变化事件
+            document.getElementById('stage').dispatchEvent(new Event('change'));
+            
+            analyzeHand();
+        }
+
+        // 分析手牌
+        function analyzeHand() {
+            const hand = document.getElementById('hand').value;
+            const position = document.getElementById('position').value;
+            const stack = parseInt(document.getElementById('stack').value);
+            const stage = document.getElementById('stage').value;
+            const board = document.getElementById('board').value;
+            
+            if (!hand) {
+                alert('请输入手牌');
+                return;
+            }
+            
+            const result = document.getElementById('result');
+            result.classList.add('show');
+            
+            let analysis;
+            if (stage === 'preflop') {
+                analysis = HandAnalyzer.evaluateHand(hand, position, stack, stage);
+            } else {
+                analysis = HandAnalyzer.analyzePostflop(hand, board, position, 0, stack, '');
+            }
+            
+            if (!analysis) {
+                alert('无法解析手牌，请检查格式');
+                result.classList.remove('show');
+                return;
+            }
+            
+            // 显示结果
+            const actionEl = document.getElementById('recommendation-action');
+            actionEl.textContent = analysis.recommendation || analysis.action || 'Check';
+            actionEl.className = 'recommendation-action';
+            
+            if (actionEl.textContent.includes('Allin')) {
+                actionEl.classList.add('allin');
+            } else if (actionEl.textContent.includes('Open') || actionEl.textContent.includes('Bet')) {
+                actionEl.classList.add('open');
+            } else if (actionEl.textContent.includes('Fold')) {
+                actionEl.classList.add('fold');
+            } else {
+                actionEl.classList.add('call');
+            }
+            
+            document.getElementById('recommendation-text').textContent = analysis.explanation;
+            document.getElementById('hand-category').textContent = analysis.category || analysis.madeHand || 'Unknown';
+            document.getElementById('gto-advice').textContent = analysis.gtoAction || analysis.recommendation || 'Check';
+            
+            // Equity
+            const equity = HandAnalyzer.calculateEquity(hand, board, 1);
+            document.getElementById('equity').textContent = equity ? `~${equity}% vs随机手牌` : 'N/A';
+            
+            // 手牌强度条
+            const strengthFill = document.getElementById('strength-fill');
+            const strength = analysis.handStrength || 50;
+            strengthFill.style.width = strength + '%';
+            strengthFill.textContent = strength + '%';
+            
+            strengthFill.className = 'strength-fill';
+            if (strength >= 85) {
+                strengthFill.classList.add('premium');
+            } else if (strength >= 65) {
+                strengthFill.classList.add('strong');
+            } else if (strength >= 45) {
+                strengthFill.classList.add('medium');
+            } else {
+                strengthFill.classList.add('weak');
+            }
+            
+            // 滚动到结果
+            result.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
