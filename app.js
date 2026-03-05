@@ -15,11 +15,22 @@ const app = {
     // 选择游戏
     selectGame(game) {
         this.currentGame = game;
-        const data = game === 'nlhe' ? NLHE_DATA : PLO_DATA;
+        let data;
+        let title;
+        
+        if (game === 'nlhe') {
+            data = NLHE_DATA;
+            title = 'Texas Hold\'em';
+        } else if (game === 'plo') {
+            data = PLO_DATA;
+            title = 'Pot Limit Omaha';
+        } else if (game === '27') {
+            data = TRIPLE_DRAW_DATA;
+            title = '2-7 Triple Draw';
+        }
         
         // 更新分类页面
-        document.getElementById('category-title').textContent = 
-            game === 'nlhe' ? 'Texas Hold\'em' : 'Pot Limit Omaha';
+        document.getElementById('category-title').textContent = title;
         
         // 生成分类列表
         const categoriesList = document.getElementById('categories-list');
@@ -105,12 +116,24 @@ const app = {
         
         // 生成场景卡片
         const card = document.getElementById('scenario-card');
-        card.innerHTML = `
-            <div class="scenario-header">
-                <span class="tag category">${scenario.category}</span>
-                <span class="tag">${scenario.stage}</span>
+        
+        // 根据游戏类型显示不同字段
+        let tagsHtml = `
+            <span class="tag category">${scenario.category}</span>
+            <span class="tag">${scenario.stage}</span>
+        `;
+        
+        if (this.currentGame !== '27') {
+            // NLHE/PLO显示筹码和位置
+            tagsHtml += `
                 <span class="tag">${scenario.effective_bb}bb</span>
                 <span class="tag">${scenario.position}</span>
+            `;
+        }
+        
+        card.innerHTML = `
+            <div class="scenario-header">
+                ${tagsHtml}
             </div>
             
             <div class="hand-display">

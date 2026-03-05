@@ -18,7 +18,7 @@
             
             <div class="stats-overview">
                 <div class="stat-card">
-                    <div class="stat-number">190</div>
+                    <div class="stat-number">50</div>
                     <div class="stat-label">NLHE题目</div>
                 </div>
                 <div class="stat-card">
@@ -26,8 +26,8 @@
                     <div class="stat-label">PLO题目</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">8</div>
-                    <div class="stat-label">分类</div>
+                    <div class="stat-number">40</div>
+                    <div class="stat-label">2-7题目</div>
                 </div>
             </div>
 
@@ -45,6 +45,12 @@
                         <h3>Pot Limit Omaha</h3>
                         <p>12题核心场景</p>
                         <span class="badge">PLO</span>
+                    </div>
+                    <div class="game-card" onclick="app.selectGame('27')">
+                        <div class="game-icon">🎲</div>
+                        <h3>2-7 Triple Draw</h3>
+                        <p>40题三次换练习</p>
+                        <span class="badge">27</span>
                     </div>
                     <div class="game-card" onclick="window.location.href='analyzer.html'">
                         <div class="game-icon">🔍</div>
@@ -134,6 +140,7 @@
 
     <script src="nlhe_data.js"></script>
     <script src="plo_data.js"></script>
+    <script src="triple_draw_data.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
